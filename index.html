@@ -3,97 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Portfoilo</title>
-    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Nibesh Maharjan | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-     <header>
-        <a href="" class="logo">Meta</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar active">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Nibesh.</h2>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-     </header>
+    </nav>
+</header>
 
-     <section class="home" id="home">
-        <div class="social">
-            <a href="#"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxl-tiktok' ></i></a>
-            <a href="#"><i class='bx bxl-facebook' ></i></a>
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Nibesh Maharjan</span></h1>
+        <h3>Frontend Developer & Graphics Designer</h3>
+        <p>BIT Student | 3rd Semester</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn primary">View Work</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
         </div>
-        <div class="home-img">
-            <img src="1.jpg" alt="">
-        </div>
-        <div class="home-text">
-            <span>Hello, I'm</span>
-            <h1>Nibesh Maharjan</h1>
-            <h2>Frontend Developer</h2>
-            <h2>Graphics Designer</h2>
-            <p> I am a visually driven frontend developer and graphic designer,<br>
-                with a passion for creating engaging digital interfaces.<br>
-                 I focus on usability, aesthetics, and consistency,<br>
-                ensuring every design delivers a smooth user experience.<br>
-                I collaborate effectively and adapt quickly,<br>
-                bringing concepts to life through design and code.
-            </p>
-            <a href="#" class="btn">Contact Me</a>
-        </div>
-        <div class="scroll-down">
-            <a href="#">
-                <i class='bx bx-mouse' ></i>
-                <span>Scroll Down</span>
-                <i class='bx bx-down-arrow-alt' ></i>
-            </a>
-        </div>
-     </section>
-<!-- About -->
-      <section class="about" id="about">
-            <div class="heading">
-                <h2>About</h2>
-                <span>Introduction</span>
-            </div>
-            <!-- About Content -->
-             <div class="about-container">
-                <div class="about-img">
-                    <img src="img/3.JPG" alt="">
-                </div>
-                <div class="about-text">
-                    <p>
-                        I am an organised, efficient and hard working person, and am willing to discover and acccept new ideas which can be put into practice effectively. I’m a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talens and skills to meet objectives.
-                    </p>
-                    <div class="information">
-                        <!-- Box1 -->
-                        <div class="info-box">
-                            <i class='bx bxs-user' ></i>
-                            <span>Nibesh Maharjan</span>
-                        </div>
-                        <!-- Box2 -->
-                        <div class="info-box">
-                            <i class='bx bxs-phone' ></i>
-                            <span>(+977) 9864389129</span>
-                        </div>
-                        <!-- Box3 -->
-                        <div class="info-box">
-                            <i class='bx bxl-telegram' ></i>
-                            <span>@NIBESHMAHARJAN</span>
-                        </div>
-                        <a href="#" class="btn">Download Cv</a>
-                    </div>
-                </div>
-             </div>
-      </section>
+    </div>
+</section>
 
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-desc">
+        I am a creative Frontend Developer and Graphics Designer with a strong interest
+        in building visually appealing and user-friendly web interfaces.
+        I enjoy converting ideas into real-world digital products using modern web technologies.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alt">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">UI / UX</div>
+        <div class="skill-card">Photoshop</div>
+        <div class="skill-card">Illustrator</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Restaurant Website</h3>
+            <p>Responsive restaurant site with interactive menu.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Graphic Designs</h3>
+            <p>Logos, posters, and social media creatives.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section alt">
+    <h2 class="section-title">Education</h2>
+    <p class="section-desc">
+        Bachelor in Information Technology (BIT)<br>
+        Currently studying in 3rd Semester
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+        <p id="msg"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Nibesh Maharjan | Frontend Developer</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
