@@ -12,7 +12,7 @@
 
 <header>
     <nav class="navbar">
-        <h2 class="logo">Nibesh.</h2>
+        <h2 class="logo">Nibesh</h2>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -23,42 +23,45 @@
     </nav>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <div class="hero-content">
+<section id="home" class="home">
+    <div class="home-content">
         <h1>Hi, I'm <span>Nibesh Maharjan</span></h1>
         <h3>Frontend Developer & Graphics Designer</h3>
         <p>BIT Student | 3rd Semester</p>
-        <div class="hero-btns">
-            <a href="#projects" class="btn primary">View Work</a>
-            <a href="#contact" class="btn outline">Contact Me</a>
+
+        <div class="home-buttons">
+            <a href="#projects" class="btn">View Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
     </div>
 </section>
+
 
 <!-- ABOUT -->
 <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
     <p class="section-desc">
-        I am a creative Frontend Developer and Graphics Designer with a strong interest
-        in building visually appealing and user-friendly web interfaces.
-        I enjoy converting ideas into real-world digital products using modern web technologies.
+        I am Nibesh Maharjan, a passionate Front-End Developer and Graphics Designer.
+        I specialize in creating responsive, user-friendly websites and visually appealing designs.
+        Currently, I am pursuing a Bachelor in Information Technology (BIT), 3rd Semester.
+        I enjoy learning new web technologies, improving my design skills, and turning ideas into interactive digital experiences.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section alt">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Responsive Design</div>
-        <div class="skill-card">UI / UX</div>
-        <div class="skill-card">Photoshop</div>
-        <div class="skill-card">Illustrator</div>
+<section id="skills" class="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skill-box">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>UI / UX</span>
+        <span>Photoshop</span>
     </div>
 </section>
+
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
@@ -66,9 +69,19 @@
 
     <div class="project-grid">
         <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
-        </div>
+    <h3>CoffeeCafe Website</h3>
+    <p>
+        A responsive café website built using HTML, CSS, and JavaScript.
+        Includes menu, animations, and modern UI design.
+    </p>
+
+    <a href="https://coffeecafee49.netlify.app/" 
+       target="_blank" 
+       class="project-link">
+       View Project
+    </a>
+</div>
+
 
         <div class="project-card">
             <h3>Restaurant Website</h3>
@@ -82,6 +95,32 @@
     </div>
 </section>
 
+<section id="graphics" class="graphics">
+    <h2 class="section-title">Graphic Designs</h2>
+
+    <div class="graphics-container">
+        <div class="graphic-card">
+            <img src="image/deepandthekipu.jpeg" alt="Poster Design">
+            <p>Poster Design For A Band</p>
+        </div>
+
+        <div class="graphic-card">
+            <img src="image/bandlogo.jpeg" alt="Logo Design">
+            <p>Logo Design</p>
+        </div>
+
+        <div class="graphic-card">
+            <img src="image/chair.jpeg" alt="Social Media Design">
+            <p>Chair Advertisement</p>
+        </div>
+    </div>
+    <!-- Image Lightbox Popup -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Graphic Design">
+</div>
+</section>
+
 <!-- EDUCATION -->
 <section class="section alt">
     <h2 class="section-title">Education</h2>
@@ -92,17 +131,26 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="contact">
     <h2 class="section-title">Contact Me</h2>
 
-    <form class="contact-form" id="contactForm">
+    <form id="contactForm">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
-        <p id="msg"></p>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
+
+    <p id="msg"></p>
 </section>
+
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
 
 <footer>
     <p>© 2026 Nibesh Maharjan | Frontend Developer</p>
